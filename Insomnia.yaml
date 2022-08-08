@@ -1,0 +1,175 @@
+_type: export
+__export_format: 4
+__export_date: 2022-08-08T16:22:18.552Z
+__export_source: insomnia.desktop.app:v2022.5.0
+resources:
+  - _id: req_3dd721185a8c4e008d1f70755cbbbeb9
+    parentId: wrk_6963befa093342da97724a7aabe5d568
+    modified: 1659730156973
+    created: 1659723195272
+    url: "{{ _.baseURL }}/repositories"
+    name: Repositories
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1659723195272
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_6963befa093342da97724a7aabe5d568
+    parentId: null
+    modified: 1659723112200
+    created: 1659723112200
+    name: Ignite - NodeJS - Desafio 03
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_c0a5a3201499483b9c93c8d20a9fbc40
+    parentId: wrk_6963befa093342da97724a7aabe5d568
+    modified: 1659975644850
+    created: 1659730300391
+    url: "{{ _.baseURL }}/repositories"
+    name: Create Repository
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"title": "Node.js",
+        	"url": "https://github.com/nodejs/node",
+        	"techs": [
+        		"nodejs",
+        		"javascript",
+        		"node",
+        		"js"
+        	]
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_87190617230a4dbf98944660f4b23404
+    authentication: {}
+    metaSortKey: -1659723195222
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_d0264e6a05524ffeb6b583abb9624010
+    parentId: wrk_6963befa093342da97724a7aabe5d568
+    modified: 1659975673308
+    created: 1659974616436
+    url: "{{ _.baseURL }}/repositories/488b012c-d8bc-4580-b9bb-1b7d6d39c36a"
+    name: Update Repository
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"title": "Node.js (updated)",
+        	"url": "https://github.com/nodejs/node-updated",
+        	"techs": [
+        		"updated",
+        		"nodejs"
+        	]
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_e3dd8eaae14b4cddbd24ff3c49496298
+    authentication: {}
+    metaSortKey: -1659723195172
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_f4bd03effafa452a940e32d231ac2a64
+    parentId: wrk_6963befa093342da97724a7aabe5d568
+    modified: 1659975687310
+    created: 1659975116912
+    url: "{{ _.baseURL }}/repositories/488b012c-d8bc-4580-b9bb-1b7d6d39c36a"
+    name: Delete Repository
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1659684734066
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_85e0549bdba147318d1cd6949772c578
+    parentId: wrk_6963befa093342da97724a7aabe5d568
+    modified: 1659975656004
+    created: 1659975307539
+    url: "{{ _.baseURL }}/repositories/488b012c-d8bc-4580-b9bb-1b7d6d39c36a/like"
+    name: Like Repository
+    description: ""
+    method: POST
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1659684734016
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_eab042680a6d7820b46208814c9496bfaf146035
+    parentId: wrk_6963befa093342da97724a7aabe5d568
+    modified: 1659723209312
+    created: 1659723112224
+    name: Base Environment
+    data:
+      baseURL: localhost:3333
+    dataPropertyOrder:
+      "&":
+        - baseURL
+    color: null
+    isPrivate: false
+    metaSortKey: 1659723112224
+    _type: environment
+  - _id: jar_eab042680a6d7820b46208814c9496bfaf146035
+    parentId: wrk_6963befa093342da97724a7aabe5d568
+    modified: 1659723112226
+    created: 1659723112226
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_6a883cc476c345589e3308a1abbfc672
+    parentId: wrk_6963befa093342da97724a7aabe5d568
+    modified: 1659723112215
+    created: 1659723112215
+    fileName: Ignite - NodeJS - Desafio 03
+    contents: ""
+    contentType: yaml
+    _type: api_spec
